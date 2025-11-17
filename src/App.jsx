@@ -1,24 +1,25 @@
-import { useState } from 'react'
-import FormModal from './components/FormModal';
-import './App.css'
+// import { useState } from 'react'
+// import FormModal from './components/FormModal';
+import { PokeApi } from './components/PokeApi/PokeApi';
+// import './App.css'
 
 function App() {
-  const [contador, setContador] = useState(1)
+  // const [contador, setContador] = useState(1)
 
-  const incrementar = () => setContador(contador + 1);
+  // const incrementar = () => setContador(contador + 1);
 
-  const decrementar = () => {
-    if (contador > 0) {
-      setContador(contador - 1);
-    }
-  }
+  // const decrementar = () => {
+  //   if (contador > 0) {
+  //     setContador(contador - 1);
+  //   }
+  // }
 
-  const reiniciar = () => setContador(1);
+  // const reiniciar = () => setContador(1);
 
 
   return (
     <>
-      <section>
+      {/* <section>
         <h1>Contador con React</h1>
         <div className="card">
           <p>{contador}</p>
@@ -33,7 +34,8 @@ function App() {
           )}
         </div>
       </section>
-      <FormModal/>
+      <FormModal/> */}
+      <PokeApi/>
     </>
   )
 }
